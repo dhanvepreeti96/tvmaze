@@ -21,12 +21,186 @@
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
-  color: white;
+  color: rgb(3, 58, 3);
 }
 
 .App-link {
   color: #61dafb;
 }
+
+
+* {
+  margin: 0;
+  box-sizing: border-box;
+  padding: 0;
+  
+ 
+}
+
+ #label{
+  font-size: 1.5rem;
+ }
+.HomePage {
+  width: 99vw;
+  height: 15vh;
+  background-color: white;
+  background-repeat: no-repeat;
+  background-size: 100vw 70vh;
+  color: black;
+  display: flex;
+
+  flex-direction: row;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  /* border: 2px solid black;
+   */
+   box-shadow: inset 0 0 12px 12px white, inset 0 0 3px 2px white;
+   /* background: linear-gradient(to right, orange , yellow, green, cyan, blue, violet); */
+}
+.Outer{
+  padding: 15px; 
+  /* border-radius: 5px; */
+  box-shadow: inset 0 0 12px 12px white, inset 0 0 3px 2px white;
+  background: linear-gradient(to right, orange , yellow, green, cyan, blue, violet);
+}
+.inputBox {
+  width: 80vw;
+  height: 51vh;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  /* justify-content: space-between; */
+  /* background-color: #757072; */
+  margin-top: 6.5vh;
+  padding: 20px;
+}
+img{
+  height: 80px;
+  width:80px;
+  /* border:2px solid black; */
+  /* margin:20px; */
+  margin-top: 6px;
+  padding: 5px;
+}
+.input {
+  width: 300px;
+  height: 40px;
+  font-size: 20px;
+  padding: 10px;
+  margin-top: 20px;
+}
+.heading {
+  font-size: 30px;
+  font-weight: 900;
+  margin:5px;
+  margin-top: 25px;
+  /* margin-left:-88px;
+  margin-right: 996px; */
+  /* background-color: #757072; */
+}
+.fa-tv {
+  padding-right: 20px;
+}
+.SearchText {
+  margin-top: 25px;
+  font-size: 30px;
+   margin-left:160px; 
+   margin-right:8px;
+}
+.rdo{
+  display: flex;
+  flex-direction: row;
+  margin: 20px;
+  margin-left: 200px;
+  /* font-size: 20px; */
+  /* font-size: 20px; */
+}
+#f-btn,#s-btn,#label{
+  margin: 5px;
+  /* margin-left:100px; */
+
+}
+
+.radio_btn{
+  padding: 15px; 
+  font-size: 50px;
+}
+.Tag {
+  width: 100vw;
+  height: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  padding: 30px;
+  /* background-color: green; */
+  background: radial-gradient(50% 123.47% at 50% 50%, #00FF94 0%, #FF00C7 100%), linear-gradient(121.28deg, #213100 0%, #FF0000 100%), linear-gradient(360deg, #0029FF 0%, #8FFF00 100%), linear-gradient(114.9deg, #00C6A2 0%, #6A45A8 100%), radial-gradient(100% 148.07% at 0% 0%, #FFFFFF 0%, #1DCD00 100%);
+background-blend-mode: screen, color-dodge, overlay, difference, normal;
+}
+#searchbox{
+  height: 50px;
+  width:500px;
+
+  border: none;
+}
+
+
+.box:before {
+  content: "";
+  z-index: -1;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: linear-gradient(-45deg, #e81cff 0%, #40c9ff 100% );
+  transform: translate3d(0px, 20px, 0) scale(0.95);
+  filter: blur(20px);
+  opacity: var(0.7);
+  transition: opacity 0.3s;
+  border-radius: inherit;
+}
+
+/* 
+* Prevents issues when the parent creates a 
+* stacking context. (For example, using the transform
+* property )
+*/
+.items::after {
+  content: "";
+  z-index: -1;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: inherit;
+  border-radius: inherit;
+}
+      
+
+
+
+.items {
+  border: 5px solid white;
+  border-radius: 5px;  
+  margin: 20px;
+  /* background-color:red; */
+  background: radial-gradient(100% 225% at 100% 0%, #FAFF00 0%, #000000 100%), linear-gradient(235deg, #DB00FF 0%, #000000 100%), linear-gradient(45deg, #241E92 0%, #241E92 40%, #5432D3 40%, #5432D3 50%, #7B6CF6 50%, #7B6CF6 70%, #E5A5FF 70%, #E5A5FF 100%), linear-gradient(180deg, #01024E 0%, #01024E 43%, #543864 43%, #543864 62%, #8B4367 62%, #8B4367 80%, #FF6464 80%, #FF6464 100%);
+  background-blend-mode: overlay, hard-light, overlay, normal;
+  color: white;
+  overflow: hidden;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.DisCr {
+  width: 200px;
+  height: 120px;
+  overflow-y: hidden;
+  color: white;
+}
+.name {
+  width: 200px;
+  overflow: hidden;
+}
+
 
 @keyframes App-logo-spin {
   from {
@@ -36,3 +210,4 @@
     transform: rotate(360deg);
   }
 }
+
